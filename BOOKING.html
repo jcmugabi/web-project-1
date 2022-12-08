@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOOKING</title>
+    <title>Booking</title>
     <style>
         body {
             background-image: linear-gradient(to right, #facccc, #ffffff, #fdfdfd, #ffd4db);
         }
-        
+
         #payment {
             margin-left: 100px;
         }
-        
+
         hr {
             width: 400px;
             color: #F5CBA7;
         }
-        
+
         label {
             color: rgb(34, 33, 33);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: small;
         }
-        
+
         #form1 {
             position: absolute;
             top: 50%;
@@ -38,16 +38,17 @@
             background-color: rgb(255, 255, 255);
             animation: moves 5s;
         }
-        
+
         @keyframes moves {
             from {
                 left: 68%
             }
+
             to {
                 left: 65%;
             }
         }
-        
+
         input[type="text"],
         input[type="tel"],
         input[type="email"],
@@ -61,55 +62,55 @@
             height: 22px;
             text-align: center;
         }
-        
+
         input:focus {
             outline: none;
         }
-        
+
         form {
             margin-left: 20px;
         }
-        
+
         h1,
         h3 {
             text-align: center;
             color: rgb(253, 15, 55);
         }
-        
+
         h3 {
             color: rgb(0, 0, 0);
             font-family: 'Courier New', Courier, monospace;
         }
-        
+
         p {
             font-family: 'Courier New', Courier, monospace;
             color: #7e7777;
             font-size: small;
         }
-        
+
         #arrival {
             float: left;
             padding-top: 10px;
         }
-        
+
         #depart {
             float: right;
             margin-right: 50px;
             padding-top: 10px;
         }
-        
+
         #room {
             display: inline-block;
             padding: 15px 0px 15px 0px;
         }
-        
+
         #mail {
             float: right;
             margin-right: 50px;
         }
-        
+
         #image {
-            background-image: url("booking.jpg");
+            background-image: url("images/booking.jpg");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 350px 550px;
@@ -122,16 +123,17 @@
             border-radius: 30px;
             animation: move 3s;
         }
-        
+
         @keyframes move {
             from {
                 left: 37%;
             }
+
             to {
                 left: 40%;
             }
         }
-        
+
         button {
             background-color: rgb(253, 15, 55);
             ;
@@ -144,35 +146,36 @@
             float: right;
             margin-right: 30px;
         }
-        
+
         #room label {
             margin-right: 15px;
         }
-        
+
         #tel {
             float: left;
         }
-        
+
         #lname {
             float: right;
             margin-right: 50px;
         }
-        
+
         h4 {
             font-family: 'Courier New', Courier, monospace;
             color: #472525;
         }
-        
+
         #message {
             margin-top: 200px;
             margin-left: 50px;
         }
-        
+
         #hr1 {
             width: 250px;
             color: #000000;
             margin-left: 0px;
         }
+
     </style>
 </head>
 
@@ -180,7 +183,7 @@
     <div id="message">
         <h4>REIGN Apartments</h4>
         <hr id="hr1">
-        <p>"We are here to provide<br/>the best services<br/>to you"</p>
+        <p>"We are here to provide<br />the best services<br />to you"</p>
     </div>
     <div id="image">
     </div>
@@ -189,26 +192,26 @@
             <h3>Reign Apartments</h3>
             <hr>
             <h1>BOOK WITH US</h1>
-            <label for="name">NAME: </label><br/>
+            <label for="name">NAME: </label><br />
             <input type="text" id="fname" class="name" />
-            <input type="text" id="lname" class="name" /><br/><br/>
+            <input type="text" id="lname" class="name" /><br /><br />
             <div id="tel">
-                <label for="contact">CONTACT: </label><br/>
+                <label for="contact">CONTACT: </label><br />
                 <input type="tel" id="contact" />
             </div>
             <div id="mail">
-                <label for="email">EMAIL: </label><br/>
+                <label for="email">EMAIL: </label><br />
                 <input type="email" id="email" />
             </div>
             <div id="arrival">
-                <label for="checkin">ARRIVAL: </label><br/>
+                <label for="checkin">ARRIVAL: </label><br />
                 <input type="text" id="checkin" onfocus="(this.type='date')" />
             </div>
             <div id="depart">
-                <label for="checkin">DEPARTURE: </label><br/>
+                <label for="checkin">DEPARTURE: </label><br />
                 <input type="text" id="checkout" onfocus="(this.type='date')" />
             </div>
-            <br/>
+            <br />
             <div id="room">
                 <input type="radio" id="1room" name="rooms">
                 <label for="rooms">1 ROOM</label>
@@ -217,23 +220,24 @@
                 <input type="radio" id="3rooms" name="rooms">
                 <label for="rooms">3 ROOMS</label>
                 <input type="radio" id="4rooms" name="rooms">
-                <label for="rooms">4 ROOMS</label><br/>
+                <label for="rooms">4 ROOMS</label><br />
             </div>
             <div id="guests">
-                <label for="guests">NUMBER OF GUESTS ?</label><br/>
+                <label for="guests">NUMBER OF GUESTS ?</label><br />
                 <input type="number" id="guests" min="1" />
-            </div><br/>
+            </div><br />
             <div id="payments">
                 <label for="payment">PAYMENT METHOD: </label>
                 <select id="payment">
-            <option value="visa">VISA CARD</option>
-            <option value="mtn">MTN</option>
-            <option value="airtel">AIRTEL</option>
-            <option value="cheque">CHEQUE</option>
-        </select>
-            </div><br/>
+                    <option value="visa">VISA CARD</option>
+                    <option value="mtn">MTN</option>
+                    <option value="airtel">AIRTEL</option>
+                    <option value="cheque">CHEQUE</option>
+                </select>
+            </div><br />
             <input type="checkbox" id="conditions" />
-            <label for="conditions">I agree to the <a href=".\Terms and Conditions.html">terms and conditions</a></label><br/>
+            <label for="conditions">I agree to the <a href=".\terms-and-conditions.html">terms and
+                    conditions</a></label><br />
             <button type="submit">SUBMIT</button>
         </form>
     </div>
