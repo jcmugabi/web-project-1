@@ -1,0 +1,208 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #f9f2f3;
+        }
+        
+        ul {
+            font-family: Arial;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #8f9779;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background: #f9f2f3;
+        }
+        
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        div a img:hover {
+            background-color: #202b03;
+        }
+        
+        div img {
+            width: 400px;
+            height: 300px;
+            border-radius: 13px;
+            border: 2px solid #ff3d0036;
+            box-shadow: 4px 7px 7px 0px #00000042;
+            cursor: pointer;
+            margin: 10px;
+        }
+        
+        h2 {
+            color: black;
+            top: 20px;
+            font-family: arial;
+            text-align: center;
+            font-size: 30pt;
+            font-weight: bold;
+        }
+        
+        h2::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background-color: orange;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: animate 4s linear infinite;
+        }
+        
+        @keyframes animate {
+            0% {
+                width: 100px;
+            }
+            50% {
+                width: 250px;
+            }
+            100% {
+                width: 100px;
+            }
+        }
+        
+        .hover {
+            position: relative;
+            border-bottom: 1px dotted black;
+        }
+        
+        .hovertext:before {
+            content: attr(data-hover);
+            visibility: hidden;
+            opacity: 0;
+            width: 400px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px 8px;
+            transition: opacity 1s ease-in-out;
+            position: absolute;
+        }
+        
+        .hovertext:hover:before {
+            opacity: 0.7;
+            visibility: visible;
+        }
+        
+        section div {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li><a href=".\homepage.html">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href=".\BOOKING.html">Booking</a></li>
+            <li><a href=".\AboutUs-2.html">About Us</a></li>
+            <li><a href=".\Terms and Conditions.html">Terms and Conditions</a></li>
+        </ul>
+    </section>
+    <section>
+        <br>
+        <h2>G A L L E R Y</h2>
+        <div>
+            <div>
+                <div class="hovertext" data-hover="2 rooms. Location: Kira">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="1.jpg"></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hovertext" data-hover="4 rooms. Location: Mukono">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="3.jpg"></a>
+                </div>
+            </div>
+            <div>
+                <div class="hovertext" data-hover="4 rooms. Location: Entebbe">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="4.jpg"></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hovertext" data-hover="2 rooms. Location: Matugga">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="5.jpg"></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hovertext" data-hover="3 rooms. Location: Mbale">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="6.jpg"></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hovertext" data-hover="2 rooms. Location: Jinja">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="9.jpg"></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hovertext" data-hover="3 rooms. Location: Kasese">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="11.jpg"></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hovertext" data-hover="2 rooms. Location: Kajjansi">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="12.jpg"></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hovertext" data-hover="4 rooms. Location: Muyenga">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="13.jpg"></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hovertext" data-hover="3 rooms. Location: Gulu">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="14.jpg"></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hovertext" data-hover="3 rooms. Location: Gayaza">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="18.jpg"></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hovertext" data-hover="4 rooms. Location: Naguru">
+                    <a href=".\BOOKING.html"><img id="img-gal" src="19.jpg"></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
